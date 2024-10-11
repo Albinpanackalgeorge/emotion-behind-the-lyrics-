@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Lobster&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #5c575700; /* Change to your preferred background color */
+    color: #fff; /* Change text color to white for visibility */
+    margin: 0;
+    padding: 0; /* Remove padding */
+    overflow: hidden; /* Hide overflow */
+}
+
+header {
+    text-align: center;
+    position: relative;
+    z-index: 10; /* Ensure the header is above the video */
+    margin-top: 20px; /* Add margin to the top */
+}
+
+h1 {
+    font-family: 'Lobster', cursive;
+    font-size: 4em; /* Increase font size */
+    color: #093906; /* Example color for emotion */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Add shadow for better visibility */
+}
+
+h2 {
+    font-weight: normal;
+    font-size: 2em; /* Increase font size */
+    margin-top: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Add shadow for better visibility */
+}
+
+.video-background {
+    position: relative;
+    height: 100vh; /* Full height of the viewport */
+    display: flex;
+    align-items: center; /* Center lyrics vertically */
+    justify-content: center; /* Center lyrics horizontally */
+    text-align: center; /* Center align text */
+    background-color: rgba(0, 0, 0, 0.7); /* Add a background color with transparency */
+}
+
+.background-video {
+    position: absolute;
+    top: 20%; /* Bring the video up by adjusting this value */
+    left: 50%;
+    width: 80%; /* Increased video width to 80% of the container */
+    height: auto; /* Maintain aspect ratio */
+    z-index: 1; /* Send video to the back */
+    transform: translate(-50%, -50%); /* Center the video horizontally and vertically */
+}
+
+.image-container {
+    position: absolute; /* Position absolutely for side images */
+    top: 50%;
+    transform: translateY(-50%); /* Center vertically */
+    z-index: 2; /* Ensure images are above the video */
+}
+
+.image-container.left {
+    left: 10%; /* Position the left image */
+}
+
+.image-container.right {
+    right: 10%; /* Position the right image */
+}
+
+.side-image {
+    width: 150px; /* Set the width of images */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.lyrics {
+    position: relative; /* Relative positioning to sit above the video */
+    z-index: 2; /* Ensure lyrics are above the video */
+    color: #5c6503; /* Change text color to white for visibility */
+    padding: 20px; /* Add some padding */
+    overflow-y: auto; /* Allow vertical scrolling if content overflows */
+    max-height: 70%; /* Limit height to ensure visibility */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for contrast */
+    border-radius: 10px; /* Rounded corners for a softer look */
+    margin: 20px; /* Add margin for spacing */
+}
+
+/* Adjusting i
